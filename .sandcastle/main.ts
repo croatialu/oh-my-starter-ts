@@ -228,7 +228,7 @@ for (let iteration = 1; iteration <= MAX_ITERATIONS; iteration++) {
   // -------------------------------------------------------------------------
   await sandcastle.run({
     hooks,
-    sandbox: docker(),
+    sandbox: createDockerSandbox(),
     name: "merger",
     maxIterations: 1,
     agent: sandcastle.codex("gpt-5.6-sol"),
