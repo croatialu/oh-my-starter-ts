@@ -17,7 +17,7 @@ After all branches are merged, make a single commit summarizing the merge.
 
 For each branch that was merged, close its issue using the following command:
 
-`<close command — see .sandcastle/SETUP_ISSUE_TRACKER.md>`
+`gh issue close <ID> --comment "Completed and merged by Sandcastle."`
 
 Here are all the issues:
 

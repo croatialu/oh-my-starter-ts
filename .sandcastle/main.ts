@@ -48,8 +48,9 @@ const MAX_ITERATIONS = 10;
 const hooks = {
   sandbox: {
     onSandboxReady: [{
-      command: "CI=true pnpm install"
-    }]
+      command: "CI=true pnpm install",
+      timeoutMs: 300_000,
+    }],
   },
 };
 

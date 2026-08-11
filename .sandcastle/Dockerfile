@@ -4,10 +4,9 @@ FROM node:22-bookworm
 RUN apt-get update && apt-get install -y \
   git \
   curl \
+  gh \
   jq \
   && rm -rf /var/lib/apt/lists/*
-
-# TODO: install your issue tracker's CLI here. See .sandcastle/SETUP_ISSUE_TRACKER.md
 
 # Build-args for UID/GID alignment: sandcastle docker build-image
 # defaults these to the host user's UID/GID so image-built files
