@@ -30,6 +30,17 @@ Sandcastle needs commands that can list, view, and close issues. Ask your coding
 pnpm sandcastle:build
 ```
 
+### Validate changes
+
+Run the repository checks before committing:
+
+```bash
+pnpm lint
+pnpm typecheck
+pnpm knip
+pnpm test --run
+```
+
 ## Note for Developers
 
 This starter recommands using [npm Trusted Publisher](https://github.com/e18e/ecosystem-issues/issues/201), where the release is done on CI to ensure the security of the packages.
